@@ -1,0 +1,147 @@
+html{
+	font-family: 'Permanent Marker', cursive;
+}
+.container {
+	background: #8E0E00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+		
+}
+body{
+	margin:0;
+}
+iframe{
+width: 70vw;
+}
+img{
+	 width:70vw;
+}
+.content{
+	background-color:background: #8E0E00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+/*	height: 100%;
+	max-height:600px; 
+	max-width: 960px;
+	width: 100%;*/
+	overflow: scroll;
+	width: 85vw;
+	height:80vh;
+	padding: 0.5em;
+	border-radius: 20px;
+	color: white;
+	overflow-x: hidden; 
+
+}
+.table {
+	width:100%;
+	border-spacing:0px; 
+}
+.fa-star{
+	color: yellow;
+}
+.table th, .table td {
+ padding:2px;
+ text-align: left;
+}
+th{
+	display: none;
+}
+td{
+	display: block;
+	color: white;
+}
+td: nth-of-type(1){
+	font-size: 1.5em;
+	color: yellow;
+}
+.position{
+	background-color: red;
+	padding: 10px;
+	margin-left: 5px
+	border-radius:5px;
+}
+.action{
+	position: absolute;
+	top:1em;
+	right:1em;
+
+}
+.close{
+	height: 20px;
+	width: 20px;
+	background-color: black;
+	display:inline-block;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+a{
+	text-decoration: none;
+}
+.title{
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+p{
+	color: white;
+}
+/*.table tr: nth-child(even){
+	background-color: #f2ee10;
+}*/
+@media(min-width: 700px){
+	th{
+		display: table-cell;
+	}
+	td{
+		display: table-cell;
+	}
+	td:nth-of-type(1){
+	font-size: 1.5em;
+	color: black;
+    }
+    .content{
+    	width:70vw;
+    	height: 70vh;
+    	box-shadow: 0 3px 6px rgba(0,0,0,0.16) , 0 3px 6px rgba(0,0,0,0.23);
+    	position:relative;
+    	padding: 2em;
+    	border-radius: 20px; 
+    	overflow-x:hidden;
+    }
+    .table th, .table td {
+    padding:2px;
+    text-align:center;
+    color: white;
+    }
+    .table tr:nth-child(even){
+	backgrond-color: #f2ee10;
+    }
+    .inline{
+    	display: inline-block;
+    }
+    .center{
+    	text-align: center;
+    }
+    .underline{
+    	border-bottom:solid 5px;
+    	padding-bottom: 15px;
+    }
+    .container{
+    	background: url(fondo.jpg);
+    }
+    iframe{
+    	width: 420px; 
+    	height: 295px;
+    }
+    img{
+    	 height:300px;
+    	 width: 420px;
+    }
+}
